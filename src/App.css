@@ -1,28 +1,60 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.MainAreaBox {
+  padding: 4rem;
+  height: 100vh;
+  background-color: #eee0bf;
+}
+.MainAreaBox,
+.temperature__form,
+.temperature__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 2rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.temperature__form span {
+  font-weight: 100;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.temperature__input {
+  padding: .6rem;
+  border-radius: 5px;
+  border: #a2a09e solid 1px;
+  width: 60%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.submit__button {
+  background-color: #439bd6;
+  padding: .6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-intro {
-  font-size: large;
+.temperature__container,
+.attempt {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #c9c4ba;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.attempts__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.attempt {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
 }
